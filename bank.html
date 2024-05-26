@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Bank fund</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-5xl text-center my-5">
+      Here is Your All
+      <span class="font-semibold text-violet-600">Bank Balance</span>
+      Information
+    </h1>
+    <section class="main-bank-section">
+      <div class="container w-2/3 mx-auto p-12">
+        <div class="balance-section grid grid-cols-3 gap-6 text-white">
+          <div class="columns bg-green-400 p-5 space-y-4 rounded-md">
+            <h4 class="text-2xl">Recently Deposited Amount</h4>
+            <h2 class="text-4xl">$<span id="depositHere">00</span></h2>
+          </div>
+          <div class="columns bg-red-400 p-5 space-y-4 rounded-md">
+            <h4 class="text-2xl">Recently Withdrawn Balance</h4>
+            <h2 class="text-4xl">$<span id="withdrawHere">00</span></h2>
+          </div>
+          <div class="columns bg-blue-400 p-5 space-y-4 rounded-md">
+            <h4 class="text-2xl">Total Balance</h4>
+            <h2 class="text-4xl">$<span id="total-balance-here">00</span></h2>
+          </div>
+        </div>
+        <div class="fund-section grid grid-cols-2 gap-8 mt-12">
+          <div class="deposit-balance p-7 bg-rose-500 space-y-4">
+            <h3 class="text-xl text-white font-semibold">Deposit Here</h3>
+            <input
+              class="py-2 px-4 w-10/12 mx-auto rounded-md"
+              type="text"
+              id="deposited-fund"
+              name=""
+              placeholder="$ Add how much you want to deposit"
+            />
+            <br />
+            <button
+              id="btn-deposit"
+              class="bg-slate-200 hover:bg-amber-200 py-2 px-5 text-lg text-black hover:text-slate-600 rounded-md"
+            >
+              Deposit
+            </button>
+          </div>
+          <div class="withdraw-balance p-7 bg-rose-500 space-y-4">
+            <h3 class="text-xl text-white font-semibold">Withdraw Here</h3>
+            <input
+              class="py-2 px-4 w-10/12 mx-auto rounded-md"
+              type="text"
+              id="withdraw-fund"
+              name=""
+              placeholder="$ Withdraw how much you want to deposit"
+            />
+            <br />
+            <button
+              id="btn-withdraw"
+              class="bg-slate-200 hover:bg-amber-200 py-2 px-5 text-lg text-black hover:text-slate-600 rounded-md"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="JS/bank-data.js"></script>
+  </body>
+</html>
